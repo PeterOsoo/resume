@@ -76,23 +76,26 @@ animatedElements.forEach(el => {
     observer.observe(el);
 });
 
-// Counter animation for stats
-const animateCounter = (element, target, duration = 2000) => {
-    let start = 0;
-    const increment = target / (duration / 16);
+// Helper function to animate numbers
+function animateNumber(element, start, end, prefix = '', suffix = '', duration = 2000) {
+    const startTime = performance.now();
     
-    const updateCounter = () => {
-        start += increment;
-        if (start < target) {
-            element.textContent = Math.floor(start);
-            requestAnimationFrame(updateCounter);
+    function update(currentTime) {
+        const elapsed = currentTime - startTime;
+        const progress = Math.min(elapsed / duration, 1);
+        
+        const current = Math.floor(start + (end - start) * progress);
+        element.textContent = prefix + current + suffix;
+        
+        if (progress < 1) {
+            requestAnimationFrame(update);
         } else {
-            element.textContent = target;
+            element.textContent = prefix + end + suffix;
         }
-    };
+    }
     
-    updateCounter();
-};
+    requestAnimationFrame(update);
+}
 
 // Observe stats and trigger counter animation
 const statsObserver = new IntersectionObserver((entries) => {
@@ -101,33 +104,28 @@ const statsObserver = new IntersectionObserver((entries) => {
             const statNumbers = entry.target.querySelectorAll('.stat-number');
             
             statNumbers.forEach(stat => {
-                const text = stat.textContent;
-                const numberMatch = text.match(/\d+/);
+                const text = stat.textContent.trim();
                 
-                if (numberMatch) {
-                    const number = parseInt(numberMatch[0]);
-                    const prefix = text.split(number)[0];
-                    const suffix = text.split(number)[1];
-                    
-                    stat.textContent = prefix + '0' + suffix;
-                    
-                    setTimeout(() => {
-                        let start = 0;
-                        const duration = 2000;
-                        const increment = number / (duration / 16);
-                        
-                        const updateCounter = () => {
-                            start += increment;
-                            if (start < number) {
-                                stat.textContent = prefix + Math.floor(start) + suffix;
-                                requestAnimationFrame(updateCounter);
-                            } else {
-                                stat.textContent = text;
-                            }
-                        };
-                        
-                        updateCounter();
-                    }, 200);
+                // Check the pattern and animate accordingly
+                if (text.includes('%')) {
+                    // Handle percentage (e.g., "60%")
+                    const number = parseInt(text.replace('%', ''));
+                    animateNumber(stat, 0, number, '', '%', 2000);
+                } else if (text.match(/^\d+\+$/)) {
+                    // Handle simple number with + (e.g., "6+")
+                    const number = parseInt(text.replace('+', ''));
+                    animateNumber(stat, 0, number, '', '+', 2000);
+                } else if (text.match(/^\d+M\+$/)) {
+                    // Handle numbers like "30M+"
+                    const number = parseInt(text.replace('M+', ''));
+                    animateNumber(stat, 0, number, '', 'M+', 2000);
+                } else if (text.match(/^\d+K\+$/)) {
+                    // Handle numbers like "100K+"
+                    const number = parseInt(text.replace('K+', ''));
+                    animateNumber(stat, 0, number, '', 'K+', 2000);
+                } else {
+                    // For any other format, just display it
+                    stat.textContent = text;
                 }
             });
             
@@ -291,5 +289,5 @@ document.head.appendChild(slideStyle);
 // Console message for recruiters
 console.log('%c👋 Hello, Recruiter!', 'font-size: 20px; font-weight: bold; color: #2563eb;');
 console.log('%cThanks for checking out my resume site!', 'font-size: 14px; color: #6b7280;');
-console.log('%cFeel free to reach out at osoopeter1000@gmail.com', 'font-size: 14px; color: #10b981;');
+console.log('%cFeel free to reach out at posoo617@gmail.com', 'font-size: 14px; color: #10b981;');
 console.log('%c🚀 Built with vanilla JavaScript, no frameworks needed!', 'font-size: 12px; font-style: italic; color: #9ca3af;');
