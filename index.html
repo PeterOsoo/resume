@@ -1,527 +1,408 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Peter Osoo - Technical Project Manager with expertise in automation, data analytics, and cross-functional team leadership">
-    <title>Peter Osoo | Technical Project Manager</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Maclean Beauty Bar & Nails — Kisumu City</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar" id="navbar">
-        <div class="container">
-            <div class="nav-brand">Peter Osoo</div>
-            <div class="nav-links">
-                <a href="#about">About</a>
-                <a href="#experience">Experience</a>
-                <a href="#projects">Projects</a>
-                <a href="#skills">Skills</a>
-                <a href="#contact">Contact</a>
-                <button class="download-btn" onclick="window.print()">Download Resume</button>
-            </div>
-            <button class="mobile-menu-btn" id="mobileMenuBtn">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+
+<!-- GRAIN OVERLAY -->
+<div class="grain"></div>
+
+<!-- NAV -->
+<nav id="navbar">
+  <a href="#" class="nav-logo">Maclean<span>Beauty Bar</span></a>
+  <ul class="nav-links">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#why">Experience</a></li>
+    <li><a href="#location">Visit</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#contact" class="nav-book wa-order" data-msg="Hi Maclean Beauty Bar! I'd like to book an appointment 💅">Book Now</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#services"  class="mob-link">Services</a>
+  <a href="#why"       class="mob-link">Experience</a>
+  <a href="#location"  class="mob-link">Visit Us</a>
+  <a href="#contact"   class="mob-link">Contact</a>
+  <a class="mob-link mob-book wa-order" data-msg="Hi Maclean Beauty Bar! I'd like to book an appointment 💅">Book Appointment 💅</a>
+</div>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg-text">BEAUTY</div>
+  <div class="hero-content">
+    <div class="hero-eyebrow reveal-fade">
+      <span class="gold-line"></span>
+      Kisumu City · K-City Mall · Block B
+      <span class="gold-line"></span>
+    </div>
+    <h1 class="hero-title reveal-up">
+      Where Beauty<br><em>Becomes Art.</em>
+    </h1>
+    <p class="hero-sub reveal-up" style="--d:.15s">
+      Nails. Hair. Makeup. Lashes. Facials. Waxing.<br>
+      Every service crafted with precision, every client treated like royalty.
+    </p>
+    <div class="hero-actions reveal-up" style="--d:.25s">
+      <a class="btn-gold wa-order" data-msg="Hi Maclean Beauty Bar! I'd like to book an appointment 💅">Book Appointment</a>
+      <a href="#services" class="btn-outline">Explore Services</a>
+    </div>
+    <div class="hero-pills reveal-up" style="--d:.35s">
+      <span class="pill">💅 Nails</span>
+      <span class="pill">💇 Hair</span>
+      <span class="pill">💄 Makeup</span>
+      <span class="pill">👁️ Lashes</span>
+      <span class="pill">✨ Facials</span>
+    </div>
+  </div>
+  <div class="hero-deco">
+    <div class="deco-ring ring1"></div>
+    <div class="deco-ring ring2"></div>
+    <div class="deco-ring ring3"></div>
+    <div class="hero-card float-1">
+      <span class="hc-icon">💅</span>
+      <div>
+        <div class="hc-title">Nail Art</div>
+        <div class="hc-sub">Gel · Acrylic · Classic</div>
+      </div>
+    </div>
+    <div class="hero-card float-2">
+      <span class="hc-icon">⭐</span>
+      <div>
+        <div class="hc-title">Last Client Taken</div>
+        <div class="hc-sub">Open Daily · 7AM till Late</div>
+      </div>
+    </div>
+    <div class="hero-card float-3">
+      <span class="hc-icon">📍</span>
+      <div>
+        <div class="hc-title">K-City Stall B 10239</div>
+        <div class="hc-sub">Kisumu City</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GOLD TICKER -->
+<div class="ticker">
+  <div class="ticker-inner">
+    <span class="ti">Nail Art & Extensions</span>
+    <span class="ti">Gel & Acrylic Nails</span>
+    <span class="ti">Pedicure & Manicure</span>
+    <span class="ti">Hair Styling & Treatment</span>
+    <span class="ti">Bridal Makeup</span>
+    <span class="ti">Lash Extensions</span>
+    <span class="ti">Brow Shaping</span>
+    <span class="ti">Facials & Skincare</span>
+    <span class="ti">Waxing & Threading</span>
+    <span class="ti">Bookings Available</span>
+    <span class="ti">Nail Art & Extensions</span>
+    <span class="ti">Gel & Acrylic Nails</span>
+    <span class="ti">Pedicure & Manicure</span>
+    <span class="ti">Hair Styling & Treatment</span>
+    <span class="ti">Bridal Makeup</span>
+    <span class="ti">Lash Extensions</span>
+    <span class="ti">Brow Shaping</span>
+    <span class="ti">Facials & Skincare</span>
+    <span class="ti">Waxing & Threading</span>
+    <span class="ti">Bookings Available</span>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="sec-header reveal-up">
+    <div class="sec-eyebrow">What We Do</div>
+    <h2 class="sec-title">Our <em>Services</em></h2>
+    <p class="sec-sub">Every treatment is a ritual. Every visit is an experience.</p>
+  </div>
+
+  <div class="services-grid">
+
+    <div class="svc-card featured reveal-up">
+      <div class="svc-icon-wrap"><span>💅</span></div>
+      <div class="svc-body">
+        <h3>Nails</h3>
+        <p>Gel, acrylic, classic polish, nail art, French tips, ombre — your nails, your canvas. We do both hands and feet.</p>
+        <ul class="svc-list">
+          <li>Gel Manicure</li>
+          <li>Acrylic Extensions</li>
+          <li>Classic Manicure</li>
+          <li>Nail Art & Designs</li>
+          <li>French Tips</li>
+        </ul>
+        <a class="svc-book wa-order" data-msg="Hi Maclean Beauty Bar! I'd like to book a nail appointment 💅">Book Nails →</a>
+      </div>
+    </div>
+
+    <div class="svc-card reveal-up" style="--d:.08s">
+      <div class="svc-icon-wrap"><span>🦶</span></div>
+      <div class="svc-body">
+        <h3>Pedicure</h3>
+        <p>Foot soak, scrub, cuticle care, nail shaping, polish and more. Your feet deserve the same love.</p>
+        <ul class="svc-list">
+          <li>Classic Pedicure</li>
+          <li>Gel Pedicure</li>
+          <li>Spa Pedicure</li>
+          <li>Nail Art on Toes</li>
+        </ul>
+        <a class="svc-book wa-order" data-msg="Hi Maclean Beauty Bar! I'd like to book a pedicure 🦶">Book Pedicure →</a>
+      </div>
+    </div>
+
+    <div class="svc-card reveal-up" style="--d:.12s">
+      <div class="svc-icon-wrap"><span>💇</span></div>
+      <div class="svc-body">
+        <h3>Hair</h3>
+        <p>From wash & blow-dry to braids, relaxers and deep conditioning treatments — your hair handled with care.</p>
+        <ul class="svc-list">
+          <li>Wash & Blowdry</li>
+          <li>Braiding & Weaves</li>
+          <li>Relaxer & Perms</li>
+          <li>Deep Conditioning</li>
+          <li>Hair Colouring</li>
+        </ul>
+        <a class="svc-book wa-order" data-msg="Hi Maclean Beauty Bar! I'd like to book a hair appointment 💇">Book Hair →</a>
+      </div>
+    </div>
+
+    <div class="svc-card reveal-up" style="--d:.16s">
+      <div class="svc-icon-wrap"><span>💄</span></div>
+      <div class="svc-body">
+        <h3>Makeup</h3>
+        <p>Everyday glam, event makeup, full bridal packages. We make sure you leave looking and feeling flawless.</p>
+        <ul class="svc-list">
+          <li>Bridal Makeup</li>
+          <li>Event & Party Glam</li>
+          <li>Natural Everyday Look</li>
+          <li>Full-face Contour</li>
+        </ul>
+        <a class="svc-book wa-order" data-msg="Hi Maclean Beauty Bar! I'd like to book a makeup appointment 💄">Book Makeup →</a>
+      </div>
+    </div>
+
+    <div class="svc-card reveal-up" style="--d:.20s">
+      <div class="svc-icon-wrap"><span>👁️</span></div>
+      <div class="svc-body">
+        <h3>Lashes & Brows</h3>
+        <p>Classic, hybrid or volume lash extensions. Brow tinting, lamination and shaping for the perfect frame.</p>
+        <ul class="svc-list">
+          <li>Classic Lash Extensions</li>
+          <li>Volume & Mega Volume</li>
+          <li>Brow Tint & Shape</li>
+          <li>Brow Lamination</li>
+        </ul>
+        <a class="svc-book wa-order" data-msg="Hi Maclean Beauty Bar! I'd like to book lashes/brows 👁️">Book Lashes →</a>
+      </div>
+    </div>
+
+    <div class="svc-card reveal-up" style="--d:.24s">
+      <div class="svc-icon-wrap"><span>✨</span></div>
+      <div class="svc-body">
+        <h3>Facials & Skincare</h3>
+        <p>Deep cleanse, exfoliate, hydrate. Our facials are tailored to your skin type for that real glow.</p>
+        <ul class="svc-list">
+          <li>Deep Cleansing Facial</li>
+          <li>Brightening Treatment</li>
+          <li>Hydration Mask</li>
+          <li>Acne Treatment</li>
+        </ul>
+        <a class="svc-book wa-order" data-msg="Hi Maclean Beauty Bar! I'd like to book a facial ✨">Book Facial →</a>
+      </div>
+    </div>
+
+    <div class="svc-card reveal-up" style="--d:.28s">
+      <div class="svc-icon-wrap"><span>🌿</span></div>
+      <div class="svc-body">
+        <h3>Waxing & Threading</h3>
+        <p>Smooth, precise and gentle. We use quality wax and threading techniques for lasting results.</p>
+        <ul class="svc-list">
+          <li>Full Body Waxing</li>
+          <li>Eyebrow Threading</li>
+          <li>Upper Lip & Face</li>
+          <li>Underarm & Legs</li>
+        </ul>
+        <a class="svc-book wa-order" data-msg="Hi Maclean Beauty Bar! I'd like to book waxing/threading 🌿">Book Waxing →</a>
+      </div>
+    </div>
+
+    <!-- BOOKING CTA CARD -->
+    <div class="svc-card svc-cta reveal-up" style="--d:.32s">
+      <div class="svc-cta-inner">
+        <div class="svc-cta-icon">🗓️</div>
+        <h3>Book Your Slot</h3>
+        <p>Bookings available. Reserve your time so we're ready for you the moment you walk in.</p>
+        <a class="btn-gold wa-order" data-msg="Hi Maclean Beauty Bar! I'd like to make a booking 🗓️">Reserve on WhatsApp</a>
+        <a href="tel:+254708645328" class="btn-outline-sm">Or Call Us</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- WHY / EXPERIENCE -->
+<section id="why">
+  <div class="why-inner">
+    <div class="why-text reveal-up">
+      <div class="sec-eyebrow gold">The Maclean Experience</div>
+      <h2 class="sec-title light">More than a salon.<br><em>A sanctuary.</em></h2>
+      <p class="sec-sub light">Step into Maclean Beauty Bar and leave the world outside. Every detail — from the ambience to the aftercare — is designed around you.</p>
+      <div class="why-list">
+        <div class="why-item">
+          <span class="wi-icon">✦</span>
+          <div>
+            <strong>Premium Products Only</strong>
+            <p>We use top-grade products on every client. No shortcuts, no compromises.</p>
+          </div>
         </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section class="hero" id="about">
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-badge">Available for New Opportunities</div>
-                <h1 class="hero-title">Technical Project Manager & Automation Specialist</h1>
-                <p class="hero-subtitle">
-                    Delivering complex technical projects across AI, healthcare, and digital infrastructure 
-                    while eliminating operational inefficiencies through intelligent automation.
-                </p>
-                <div class="hero-stats">
-                    <div class="stat">
-                        <div class="stat-number">6+</div>
-                        <div class="stat-label">Years Experience</div>
-                    </div>
-                    <div class="stat">
-                        <div class="stat-number">60M+</div>
-                        <div class="stat-label">Projects Managed</div>
-                    </div>
-                    <div class="stat">
-                        <div class="stat-number">60%</div>
-                        <div class="stat-label">Error Reduction</div>
-                    </div>
-                    <div class="stat">
-                        <div class="stat-number">25%</div>
-                        <div class="stat-label">Efficiency Gain</div>
-                    </div>
-                </div>
-                <div class="hero-actions">
-                    <a href="#contact" class="btn btn-primary">Get in Touch</a>
-                    <a href="https://github.com/PeterOsoo" target="_blank" class="btn btn-secondary">View GitHub</a>
-                </div>
-            </div>
+        <div class="why-item">
+          <span class="wi-icon">✦</span>
+          <div>
+            <strong>Skilled Professionals</strong>
+            <p>Our team is trained, experienced and passionate about making you look your best.</p>
+          </div>
         </div>
-    </section>
-
-    <!-- About Section -->
-    <section class="about" id="about-section">
-        <div class="container">
-            <div class="section-header">
-                <h2>About Me</h2>
-                <div class="section-line"></div>
-            </div>
-            <div class="about-grid">
-                <div class="about-main">
-                    <p class="about-intro">
-                        I'm a Technical Project Manager with over 6 years of experience delivering complex projects 
-                        across AI, healthcare, utility, and finance sectors. My approach combines rigorous project 
-                        management discipline with a passion for automation and process improvement.
-                    </p>
-                    <p class="about-details">
-                        What sets me apart is my ability to not just manage projects, but to rebuild how teams operate. 
-                        I've designed custom automation systems that cut manual errors by 60% and boost efficiency by 25%, 
-                        turning spreadsheets into real-time dashboards and giving leadership visibility without constant status meetings.
-                    </p>
-                </div>
-            </div>
-            
-            <div class="contact-cards">
-                <div class="contact-card-item">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                        <polyline points="22,6 12,13 2,6"></polyline>
-                    </svg>
-                    <div>
-                        <h4>Email</h4>
-                        <a href="mailto:osoopeter1000@gmail.com">osoopeter1000@gmail.com</a>
-                    </div>
-                </div>
-                <div class="contact-card-item">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
-                    </svg>
-                    <div>
-                        <h4>Phone</h4>
-                        <a href="tel:+254748866805">+254 748 866 805</a>
-                    </div>
-                </div>
-                <div class="contact-card-item">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                        <circle cx="12" cy="10" r="3"></circle>
-                    </svg>
-                    <div>
-                        <h4>Location</h4>
-                        <span>Nairobi, Kenya</span>
-                    </div>
-                </div>
-            </div>
+        <div class="why-item">
+          <span class="wi-icon">✦</span>
+          <div>
+            <strong>Last Client Accepted</strong>
+            <p>Open daily 7AM till late. We take the last client — because beauty has no closing time.</p>
+          </div>
         </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section class="experience" id="experience">
-        <div class="container">
-            <div class="section-header">
-                <h2>Work Experience</h2>
-                <div class="section-line"></div>
-            </div>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h3>Technical Project Manager & Innovations Lead</h3>
-                            <span class="timeline-date">Apr 2021 - Present</span>
-                        </div>
-                        <div class="timeline-company">CloudFactory Limited</div>
-                        <ul class="timeline-list">
-                            <li>Led end-to-end technical delivery of AI-powered data projects across healthcare, utility, logistics, and finance sectors, ensuring strict alignment with scope, timelines, quality benchmarks, and client SLAs</li>
-                            <li>Successfully managed and delivered high-impact projects valued at Ksh 30M, 15M, and 2M, consistently meeting all budget targets, delivery milestones, and maintaining 100% on-time completion record</li>
-                            <li>Spearheaded integration of AI/NLP solutions and workflow automation initiatives, translating complex technical requirements into actionable project plans and measurable business outcomes</li>
-                            <li>Pioneered custom automation tools using Google Apps Script and Looker Studio, reducing manual tracking errors by 60% and boosting operational efficiency by 25% across all project teams</li>
-                            <li>Coordinated cross-functional, remote-first teams of 5-10 members using Agile/Scrum methodologies, maintaining real-time project visibility through custom dashboards and achieving 95%+ stakeholder satisfaction</li>
-                            <li>Managed project budgets and CAPEX utilization for multi-million shilling initiatives, ensuring accurate forecasting, timely receipting, and financial accountability throughout project lifecycle</li>
-                            <li>Enforced quality gates and directed comprehensive UAT/QA processes, guaranteeing solution quality, regulatory compliance, and seamless handover to client operations teams</li>
-                            <li>Built and maintained strategic relationships with clients including healthcare providers, county governments, and enterprise organizations, serving as trusted advisor for digital transformation initiatives</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h3>Assistant Project Manager</h3>
-                            <span class="timeline-date">Dec 2020 - Apr 2021</span>
-                        </div>
-                        <div class="timeline-company">Nouveta Limited</div>
-                        <ul class="timeline-list">
-                            <li>Led successful rollout of County Government Revenue Collection systems, coordinating scope definition, resource allocation, and stakeholder alignment across multiple county departments</li>
-                            <li>Conducted comprehensive data analysis on revenue collection patterns to identify process inefficiencies, resulting in optimized system workflows and improved collection accuracy</li>
-                            <li>Performed end-to-end testing and validation of REST APIs, collaborating with development teams to ensure seamless integration with Angular-based platforms and legacy government systems</li>
-                            <li>Managed project timelines and deliverables using Agile methodologies, tracking progress through JIRA and ensuring on-time delivery despite tight government fiscal deadlines</li>
-                            <li>Coordinated cross-functional deployment workflows between engineering teams and government stakeholders, reducing delivery bottlenecks by 40% and accelerating project handovers</li>
-                            <li>Analyzed system performance data and user feedback post-deployment to identify improvement opportunities, presenting actionable recommendations to county IT leadership</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h3>Assistant Project Manager</h3>
-                            <span class="timeline-date">Jan 2020 - Dec 2020</span>
-                        </div>
-                        <div class="timeline-company">CloudFactory Limited</div>
-                        <ul class="timeline-list">
-                            <li>Supported planning and execution of AI-powered data annotation projects, tracking deliverables and milestones to ensure alignment with client requirements and quality benchmarks</li>
-                            <li>Conducted comprehensive quality assurance reviews across multiple AI training datasets, reducing rework by 30% and increasing client satisfaction scores through rigorous validation processes</li>
-                            <li>Facilitated daily collaboration across operations, quality assurance, and engineering teams, ensuring seamless communication and rapid resolution of project blockers</li>
-                            <li>Assisted senior project managers in resource allocation and capacity planning for machine learning projects, learning to balance workload distribution across distributed teams</li>
-                            <li>Developed foundational leadership skills by mentoring new team members on project workflows, quality standards, and best practices for AI data operations</li>
-                            <li>Created and maintained project documentation including status reports, risk logs, and lessons learned, contributing to knowledge base that improved future project execution</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h3>Project Coordinator</h3>
-                            <span class="timeline-date">Jul 2018 - Dec 2018</span>
-                        </div>
-                        <div class="timeline-company">CoreTec Systems and Solutions</div>
-                        <ul class="timeline-list">
-                            <li>Coordinated end-to-end implementation of Microsoft Dynamics 365 Business Central ERP solutions for SACCOs and financial institutions, managing deployment timelines and stakeholder communication</li>
-                            <li>Conducted comprehensive business requirement analysis sessions with clients to map current processes, identify automation opportunities, and design customized ERP workflows aligned with organizational needs</li>
-                            <li>Collaborated with technical teams to configure and customize Dynamics 365 modules including financial management, loan processing, member management, and reporting systems</li>
-                            <li>Led user acceptance testing (UAT) and quality assurance processes, ensuring system reliability, data accuracy, and compliance with financial regulatory requirements before go-live</li>
-                            <li>Delivered comprehensive user training programs and created documentation for SACCO staff and management, achieving 85%+ system adoption rates and reducing reliance on manual processes</li>
-                            <li>Provided post-deployment support and system optimization, troubleshooting technical issues and gathering user feedback to enhance ERP functionality and improve operational efficiency</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+        <div class="why-item">
+          <span class="wi-icon">✦</span>
+          <div>
+            <strong>Bookings & Walk-ins Welcome</strong>
+            <p>Reserve ahead to guarantee your slot, or just walk in whenever you're ready.</p>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
+    <div class="why-stats reveal-up" style="--d:.15s">
+      <div class="stat-card">
+        <div class="stat-big">7AM</div>
+        <div class="stat-lbl">Opens Daily</div>
+      </div>
+      <div class="stat-card gold-card">
+        <div class="stat-big">Late</div>
+        <div class="stat-lbl">Last Client Taken</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-big">8+</div>
+        <div class="stat-lbl">Services Offered</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-big">💅</div>
+        <div class="stat-lbl">Nail Specialists</div>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <!-- Projects Section -->
-    <section class="projects" id="projects">
-        <div class="container">
-            <div class="section-header">
-                <h2>Featured Projects</h2>
-                <div class="section-line"></div>
-                <p>Showcase of impactful projects delivered across various sectors</p>
-            </div>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-header">
-                        <div class="project-icon">🏥</div>
-                        <span class="project-tag">Healthcare</span>
-                    </div>
-                    <h3>Healthcare EMR System Integration</h3>
-                    <p>Led implementation of AI-powered Electronic Medical Records system for a major healthcare provider, integrating patient data management, appointment scheduling, and real-time analytics.</p>
-                    <div class="project-tech">
-                        <span>Python</span>
-                        <span>REST APIs</span>
-                        <span>Google Apps Script</span>
-                        <span>Data Analytics</span>
-                    </div>
-                    <div class="project-impact">
-                        <strong>Impact:</strong> Reduced patient wait times by 35%, improved data accuracy by 60%
-                    </div>
-                </div>
+<!-- LOCATION -->
+<section id="location">
+  <div class="sec-header reveal-up">
+    <div class="sec-eyebrow">Find Us</div>
+    <h2 class="sec-title">We're in<br><em>Kisumu City.</em></h2>
+    <p class="sec-sub">Right inside K-City Mall — easy to find, easy to get to.</p>
+  </div>
 
-                <div class="project-card">
-                    <div class="project-header">
-                        <div class="project-icon">⚡</div>
-                        <span class="project-tag">Utility</span>
-                    </div>
-                    <h3>Utility Customer Billing Platform</h3>
-                    <p>Managed end-to-end delivery of automated billing and customer management system for utility company, handling 100K+ monthly transactions with real-time dashboard reporting.</p>
-                    <div class="project-tech">
-                        <span>Looker Studio</span>
-                        <span>SQL</span>
-                        <span>Automation</span>
-                        <span>Project Management</span>
-                    </div>
-                    <div class="project-impact">
-                        <strong>Impact:</strong> Ksh 15M project delivered on-time, 25% efficiency improvement
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-header">
-                        <div class="project-icon">🏛️</div>
-                        <span class="project-tag">Government</span>
-                    </div>
-                    <h3>County Revenue Collection System</h3>
-                    <p>Coordinated deployment of comprehensive revenue collection platform for county government, integrating multiple payment channels and compliance reporting systems.</p>
-                    <div class="project-tech">
-                        <span>Angular</span>
-                        <span>REST APIs</span>
-                        <span>Agile/Scrum</span>
-                        <span>JIRA</span>
-                    </div>
-                    <div class="project-impact">
-                        <strong>Impact:</strong> Streamlined revenue collection, 40% reduction in processing time
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-header">
-                        <div class="project-icon">🤖</div>
-                        <span class="project-tag">AI/ML</span>
-                    </div>
-                    <h3>AI Data Annotation Platform</h3>
-                    <p>Project managed large-scale AI training data projects, coordinating distributed teams to deliver high-quality annotated datasets for machine learning model development.</p>
-                    <div class="project-tech">
-                        <span>AI/ML</span>
-                        <span>Quality Assurance</span>
-                        <span>Team Leadership</span>
-                        <span>Agile</span>
-                    </div>
-                    <div class="project-impact">
-                        <strong>Impact:</strong> Delivered 30M+ data points, 30% quality improvement
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-header">
-                        <div class="project-icon">💼</div>
-                        <span class="project-tag">Finance</span>
-                    </div>
-                    <h3>SACCO ERP Implementation</h3>
-                    <p>Coordinated Microsoft Dynamics 365 deployment for multiple SACCOs, implementing financial management, loan processing, and member management modules.</p>
-                    <div class="project-tech">
-                        <span>Dynamics 365</span>
-                        <span>ERP</span>
-                        <span>Training</span>
-                        <span>UAT</span>
-                    </div>
-                    <div class="project-impact">
-                        <strong>Impact:</strong> 85%+ adoption rate, eliminated manual processes
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-header">
-                        <div class="project-icon">📊</div>
-                        <span class="project-tag">Automation</span>
-                    </div>
-                    <h3>Custom Project Tracking System</h3>
-                    <p>Designed and built company-wide automated project tracking platform using Google Apps Script, integrating with multiple data sources for real-time reporting.</p>
-                    <div class="project-tech">
-                        <span>Google Apps Script</span>
-                        <span>Looker Studio</span>
-                        <span>Automation</span>
-                        <span>Dashboards</span>
-                    </div>
-                    <div class="project-impact">
-                        <strong>Impact:</strong> 60% reduction in manual work, adopted company-wide
-                    </div>
-                </div>
-            </div>
+  <div class="location-grid reveal-up" style="--d:.1s">
+    <div class="map-box">
+      <div class="map-inner">
+        <div class="map-pin">📍</div>
+        <h4>Maclean Beauty Bar & Nails</h4>
+        <p>K-City Mall, Stall No. B 10239<br>Block B, Kisumu City</p>
+        <a href="https://maps.google.com/?q=KCity+Mall+Kisumu" target="_blank" class="btn-gold-sm">Open in Google Maps ↗</a>
+      </div>
+    </div>
+    <div class="loc-info">
+      <div class="loc-row">
+        <div class="loc-icon">🏬</div>
+        <div>
+          <h4>Location</h4>
+          <p>K-City Mall · Stall B 10239 · Block B<br>Kisumu City, Kenya</p>
         </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section class="skills" id="skills">
-        <div class="container">
-            <div class="section-header">
-                <h2>Core Skills & Technologies</h2>
-                <div class="section-line"></div>
-            </div>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>Project Management</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Agile/Scrum</span>
-                        <span class="skill-tag">Waterfall</span>
-                        <span class="skill-tag">Risk Management</span>
-                        <span class="skill-tag">Stakeholder Management</span>
-                        <span class="skill-tag">CAPEX Management</span>
-                        <span class="skill-tag">Quality Gates</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Tools & Platforms</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">JIRA</span>
-                        <span class="skill-tag">MS Project</span>
-                        <span class="skill-tag">SharePoint</span>
-                        <span class="skill-tag">Trello</span>
-                        <span class="skill-tag">ClickUp</span>
-                        <span class="skill-tag">Slack (Expert + Workflows)</span>
-                        <span class="skill-tag">Google Workspace</span>
-                        <span class="skill-tag">Git</span>
-                        <span class="skill-tag">GitHub</span>
-                        <span class="skill-tag">Postman</span>
-                        <span class="skill-tag">VS Code</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Cloud & DevOps</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">AWS</span>
-                        <span class="skill-tag">Google Cloud Platform</span>
-                        <span class="skill-tag">Docker</span>
-                        <span class="skill-tag">Kubernetes</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Automation & Data</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Google Apps Script</span>
-                        <span class="skill-tag">Python</span>
-                        <span class="skill-tag">Pandas</span>
-                        <span class="skill-tag">NumPy</span>
-                        <span class="skill-tag">Matplotlib</span>
-                        <span class="skill-tag">SQL</span>
-                        <span class="skill-tag">Looker Studio</span>
-                        <span class="skill-tag">Power BI</span>
-                        <span class="skill-tag">REST APIs</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Systems & Integration</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Microsoft Dynamics 365</span>
-                        <span class="skill-tag">Angular</span>
-                        <span class="skill-tag">CRM Systems</span>
-                        <span class="skill-tag">MySQL</span>
-                        <span class="skill-tag">Excel/Sheets</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="certifications">
-                <h3>Certifications & Education</h3>
-                <div class="cert-grid">
-                    <div class="cert-item">
-                        <div class="cert-icon">🎓</div>
-                        <div class="cert-details">
-                            <h4>BSc Information Technology</h4>
-                            <p>Jomo Kenyatta University of Agriculture and Technology (2015-2019)</p>
-                        </div>
-                    </div>
-                    <div class="cert-item">
-                        <div class="cert-icon">✓</div>
-                        <div class="cert-details">
-                            <h4>Certified ScrumMaster® (CSM)</h4>
-                            <p>Scrum Alliance</p>
-                        </div>
-                    </div>
-                    <div class="cert-item">
-                        <div class="cert-icon">⏳</div>
-                        <div class="cert-details">
-                            <h4>PMP® Certification</h4>
-                            <p>In Progress - Targeting June 2026</p>
-                        </div>
-                    </div>
-                    <div class="cert-item">
-                        <div class="cert-icon">📊</div>
-                        <div class="cert-details">
-                            <h4>Data Science Bootcamp</h4>
-                            <p>Ongoing (Udemy, 2026)</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      </div>
+      <div class="loc-row">
+        <div class="loc-icon">🕖</div>
+        <div>
+          <h4>Opening Hours</h4>
+          <p>Monday – Sunday: 7:00 AM till Late<br>Last client accepted before closing</p>
         </div>
-    </section>
-
-    <!-- Achievements Section -->
-    <section class="achievements">
-        <div class="container">
-            <div class="section-header">
-                <h2>Key Achievements</h2>
-                <div class="section-line"></div>
-            </div>
-            <div class="achievements-grid">
-                <div class="achievement-card">
-                    <div class="achievement-icon">💰</div>
-                    <h3>High-Value Project Delivery</h3>
-                    <p>Led projects exceeding Ksh 15M in budget, consistently delivering on time and within scope across AI, healthcare, and utility sectors</p>
-                </div>
-                <div class="achievement-card">
-                    <div class="achievement-icon">⚡</div>
-                    <h3>25% Efficiency Boost</h3>
-                    <p>Increased operational efficiency by 25% through introduction of automated tracking tools and streamlined workflows</p>
-                </div>
-                <div class="achievement-card">
-                    <div class="achievement-icon">🎯</div>
-                    <h3>60% Error Reduction</h3>
-                    <p>Built custom project tracking system using Google Apps Script, reducing manual errors and follow-up emails by 60%</p>
-                </div>
-                <div class="achievement-card">
-                    <div class="achievement-icon">📊</div>
-                    <h3>Real-Time Dashboards</h3>
-                    <p>Created interactive Looker Studio dashboards enabling automated reporting and data visualization for stakeholders</p>
-                </div>
-            </div>
+      </div>
+      <div class="loc-row">
+        <div class="loc-icon">📲</div>
+        <div>
+          <h4>WhatsApp & Bookings</h4>
+          <p>+254 708 645 328<br>Message us anytime for bookings & enquiries</p>
         </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="contact" id="contact">
-        <div class="container">
-            <div class="section-header">
-                <h2>Let's Work Together</h2>
-                <div class="section-line"></div>
-                <p>Open to project management, data analysis, and digital transformation opportunities</p>
-            </div>
-            <div class="contact-grid">
-                <a href="mailto:osoopeter1000@gmail.com" class="contact-card">
-                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                        <polyline points="22,6 12,13 2,6"></polyline>
-                    </svg>
-                    <h3>Email</h3>
-                    <p>osoopeter1000@gmail.com</p>
-                </a>
-                <a href="tel:+254748866805" class="contact-card">
-                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
-                    </svg>
-                    <h3>Phone</h3>
-                    <p>+254 748 866 805</p>
-                </a>
-                <a href="https://github.com/PeterOsoo" target="_blank" class="contact-card">
-                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-                    </svg>
-                    <h3>GitHub</h3>
-                    <p>github.com/PeterOsoo</p>
-                </a>
-            </div>
+      </div>
+      <div class="loc-row">
+        <div class="loc-icon">💬</div>
+        <div>
+          <h4>Queries & Customer Care</h4>
+          <p>Questions about services, pricing or availability? We're always happy to help — just send a WhatsApp.</p>
         </div>
-    </section>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-text">
-                    <p>&copy; 2026 Peter Osoo. All rights reserved.</p>
-                    <p>Technical Project Manager | Automation Specialist | Data Analytics Enthusiast</p>
-                </div>
-                <div class="footer-links">
-                    <a href="#about">About</a>
-                    <a href="#experience">Experience</a>
-                    <a href="#projects">Projects</a>
-                    <a href="#skills">Skills</a>
-                    <a href="#contact">Contact</a>
-                </div>
-            </div>
-        </div>
-    </footer>
+<!-- CONTACT / BOOKING CTA -->
+<section id="contact">
+  <div class="contact-inner reveal-up">
+    <div class="contact-deco-text">BOOK</div>
+    <div class="sec-eyebrow gold-eye">Ready to Glow?</div>
+    <h2 class="contact-title">Your appointment<br><em>is one tap away.</em></h2>
+    <p class="contact-sub">Book on WhatsApp, ask any question, or just call. We're here for you every day.</p>
+    <div class="contact-btns">
+      <a class="btn-gold lg wa-order" data-msg="Hi Maclean Beauty Bar! I'd like to book an appointment 💅">
+        <span>💬</span> Book on WhatsApp
+      </a>
+      <a href="tel:+254708645328" class="btn-outline lg">
+        <span>📞</span> Call Us
+      </a>
+    </div>
+    <div class="contact-note">
+      Open daily · 7AM till late · Last client accepted · Walk-ins welcome
+    </div>
+  </div>
+</section>
 
-    <script src="script.js"></script>
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <div class="footer-logo">Maclean<span>Beauty Bar</span></div>
+      <p>Where beauty becomes art.<br>Kisumu City, Kenya.</p>
+    </div>
+    <div class="footer-links">
+      <a href="#services">Services</a>
+      <a href="#why">Experience</a>
+      <a href="#location">Location</a>
+      <a class="wa-order" data-msg="Hi Maclean Beauty Bar! I have a query 💬">WhatsApp</a>
+    </div>
+    <div class="footer-contact">
+      <p>📍 K-City Mall, Stall B 10239, Block B</p>
+      <p>📱 +254 708 645 328</p>
+      <p>🕖 Open Daily · 7AM – Late</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 Maclean Beauty Bar & Nails · Kisumu City</span>
+    <span class="footer-tag">✦ Where Beauty Becomes Art ✦</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
